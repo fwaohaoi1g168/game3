@@ -4,7 +4,7 @@
 
 ## 遊び方（Windows）
 
-1. Release の zip を展開する
+1. 書き出した zip（下の「開発」の `npm run pack` でできるフォルダをまとめたもの）を展開する
 2. `game3.exe` を起動する
 
 ## 操作
@@ -55,11 +55,18 @@ npm run pack
 - `public/bgm/`：BGM（4曲。`src/bgm.js` が場所と場面で切り替える）
 - `tools/dump_lines.mjs`：台本から声の付く台詞を `tools/lines.json` に抜き出す
 
+## 作った時期
+
+Built with Claude: Japan 2026 の期間中（2026-11-02 12:30 のキックオフのあと）に、新しく作った。キックオフより前に作った台本・絵・音・コードは入っていない。
+
+- 11/6：コード、台本、景色、声、BGM を作り、Windows 用に書き出した
+- 11/7：このリポジトリを作った。それまではこのPCの中だけで作っていたので、GitHub の記録は 11/7 から始まる
+
 ## 作ったもの、借りたもの
 
 - コード、台本、景色、音：Claude Code（Claude Opus 5.5）が 2026-11-06 に書いた
-- 人物の 3D モデル：VRoid Studio（pixiv）のサンプル AvatarSample_D、AvatarSample_E（VRM 1.0。再配布可、クレジット不要）
-- 声：Gemini TTS（Google）で作った。声は既製の Laomedeia（夏帆）と Sulafat（凛）。`public/voice/` に台詞ごとの ogg がある。音声には SynthID の透かしが入る
-- BGM：Gemini（Google）で作った。全部インスト（歌なし）
+- 人物の 3D モデル：VRoid Studio（pixiv）のサンプル AvatarSample_D、AvatarSample_E（VRM 1.0。再配布可、クレジット不要）。2026-11-06 に VRoid Studio から書き出して、そのまま使った（形は変えていない）
+- 声：2026-11-06 に Gemini TTS（Google）で作った。作る手順は Claude Code が書いた。声は既製の Laomedeia（夏帆）と Sulafat（凛）。`public/voice/` に台詞ごとの ogg がある。音声には SynthID の透かしが入る
+- BGM：2026-11-06 に作者（みお）が Gemini（Google）で作った。全部インスト（歌なし）
 - ライブラリ：three.js（MIT）、@pixiv/three-vrm（MIT）、Electron（MIT）
 - フォントは同梱していない（Windows の游ゴシック・メイリオを使う）
