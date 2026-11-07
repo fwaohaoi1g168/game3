@@ -89,3 +89,11 @@ Built with Claude: Japan 2026 の期間中（2026-11-02 12:30 のキックオフ
 - BGM：2026-11-06 に作者（みお）が Gemini（Google）で作った。全部インスト（歌なし）
 - ライブラリ：three.js（MIT）、@pixiv/three-vrm（MIT）、Electron（MIT）
 - フォントは同梱していない（Windows の游ゴシック・メイリオを使う）
+
+### 使った生成 AI の道具とプラン
+
+- 声：Gemini TTS（Google）。Google Cloud の Vertex AI（使った分を払う有料）で作った
+- BGM：Gemini アプリ（Google。音楽は Lyria）。作者の Google AI Pro（有料）で作った
+- 3Dの人物は生成 AI ではなく、VRoid Studio のサンプル
+
+どの道具の規約も、作った物は使う人のもので、公開を禁じていない（2026-11-07 に OpenAI の利用規約、Google 利用規約、Google Cloud のサービス固有の規約、Gemini API 追加利用規約の本文で確かめた）。AI で作った物を人が作った物とは見せない（どの規約にもある決まり）。
