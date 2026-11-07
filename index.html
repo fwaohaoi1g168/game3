@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>花まつりの朝</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="view"></canvas>
+  <div id="fade"></div>
+
+  <div id="banner" class="hidden"></div>
+  <div id="prompt" class="hidden"></div>
+
+  <div id="msg" class="hidden">
+    <div id="name" class="hidden"></div>
+    <div id="text"></div>
+    <div id="next" class="hidden">▼</div>
+  </div>
+
+  <div id="choices" class="hidden"></div>
+
+
+  <div id="title" class="hidden">
+    <h1>花まつりの朝</h1>
+    <ul class="menu" id="title-menu">
+      <li data-act="new">はじめから</li>
+      <li data-act="load">つづきから</li>
+      <li data-act="quit">おわる</li>
+    </ul>
+    <div class="hint">↑↓：えらぶ　Enter：決める</div>
+  </div>
+
+  <div id="pause" class="hidden">
+    <div class="panel">
+      <h2>メニュー</h2>
+      <ul class="menu" id="pause-menu">
+        <li data-act="resume">つづける</li>
+        <li data-act="save">セーブ</li>
+        <li data-act="load">ロード</li>
+        <li data-act="help">操作の説明</li>
+        <li data-act="title">タイトルへもどる</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="slots" class="hidden">
+    <div class="panel">
+      <h2 id="slots-title">セーブ</h2>
+      <ul class="menu" id="slots-menu"></ul>
+      <div class="hint">Esc：もどる</div>
+    </div>
+  </div>
+
+  <div id="confirm" class="hidden">
+    <div class="panel small">
+      <p id="confirm-text"></p>
+      <ul class="menu row" id="confirm-menu">
+        <li data-act="yes">はい</li>
+        <li data-act="no">いいえ</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="help" class="hidden">
+    <div class="panel">
+      <h2>操作の説明</h2>
+      <table>
+        <tr><td>↑ / W</td><td>前へ歩く</td></tr>
+        <tr><td>↓ / S</td><td>うしろへ下がる</td></tr>
+        <tr><td>← → / A D</td><td>向きを変える</td></tr>
+        <tr><td>Shift</td><td>押しながらで走る</td></tr>
+        <tr><td>Enter / Space</td><td>話す・文を進める・決める</td></tr>
+        <tr><td>Esc</td><td>メニュー</td></tr>
+        <tr><td>F11</td><td>全画面の切り替え</td></tr>
+      </table>
+      <div class="hint">Enter / Esc：とじる</div>
+    </div>
+  </div>
+
+  <div id="loading">よみこみ中…</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

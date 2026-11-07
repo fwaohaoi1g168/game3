@@ -1,0 +1,346 @@
+[
+  {
+    "id": "kaho_first_01",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first",
+    "text": "あ……！ ほんとに来てくれた。おかえり！",
+    "face": "happy"
+  },
+  {
+    "id": "kaho_first_02",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first",
+    "text": "三年ぶりだね。……背、伸びた？ なんか、ちょっと悔しい。",
+    "face": "relaxed"
+  },
+  {
+    "id": "kaho_first_03",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first",
+    "text": "今日は花まつりなんだよ。手紙、間に合ってよかった。",
+    "face": "happy"
+  },
+  {
+    "id": "kaho_first_04",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first",
+    "text": "わたし、今年は広場の係なの。朝の鐘が鳴るまで、ここを離れられないんだ。",
+    "face": "relaxed"
+  },
+  {
+    "id": "kaho_first_05",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first",
+    "text": "……ほんとはね、凛も一緒に待ってるはずだったの。",
+    "face": "neutral"
+  },
+  {
+    "id": "kaho_first_06",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first",
+    "text": "でも、ちょっと目を離したら、いなくなってて。",
+    "face": "sad"
+  },
+  {
+    "id": "kaho_first_07",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first",
+    "text": "ここ何日か、わたしのこと避けてるみたいなんだ。わけを聞いても、教えてくれなくて。",
+    "face": "sad"
+  },
+  {
+    "id": "kaho_first_08",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first",
+    "text": "え、いいの？ 着いたばっかりなのに。",
+    "face": "surprised"
+  },
+  {
+    "id": "kaho_first_09",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first",
+    "text": "……ありがとう。わたしが行くと、たぶん、また逃げられちゃうから。",
+    "face": "relaxed"
+  },
+  {
+    "id": "kaho_first_ask_01",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first_ask",
+    "text": "それが、わからないの。ケンカした覚えもないし。",
+    "face": "neutral"
+  },
+  {
+    "id": "kaho_first_ask_02",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first_ask",
+    "text": "……もしかしたら、わたしが何か、言いそびれてるのかも。",
+    "face": "sad"
+  },
+  {
+    "id": "kaho_first_ask_03",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first_ask",
+    "text": "ありがとう。わたしが行くと、たぶん、また逃げられちゃうから。",
+    "face": "relaxed"
+  },
+  {
+    "id": "kaho_first_end_01",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first_end",
+    "text": "凛は小さいころから、落ちこむと湖を見に行くの。もしかしたら、そっちかも。",
+    "face": "neutral"
+  },
+  {
+    "id": "kaho_first_end_02",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first_end",
+    "text": "湖へ下りる階段は、広場の右の奥。花のアーチのところだよ。",
+    "face": "neutral"
+  },
+  {
+    "id": "kaho_first_end_03",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_first_end",
+    "text": "鐘が鳴るまでに、ふたりで戻ってきてね。ここから見る花まつり、ほんとにきれいなんだから。",
+    "face": "happy"
+  },
+  {
+    "id": "kaho_again_01",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_again",
+    "text": "湖へ下りる階段は、広場の右の奥。花のアーチの先だよ。",
+    "face": "neutral"
+  },
+  {
+    "id": "kaho_before_rin_01",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "kaho_before_rin",
+    "text": "凛、いた？ ……そっか。湖のほうも、見てくれた？",
+    "face": "sad"
+  },
+  {
+    "id": "rin_talk_01",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_talk",
+    "text": "……あ。帰ってきてたんだ。おかえり。",
+    "face": "surprised"
+  },
+  {
+    "id": "rin_talk_02",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_talk",
+    "text": "三年ぶりだね。こんなところで会うなんて、思わなかった。",
+    "face": "relaxed"
+  },
+  {
+    "id": "rin_talk_03",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_talk",
+    "text": "……お姉ちゃん、心配してた？ ……だよね。",
+    "face": "neutral"
+  },
+  {
+    "id": "rin_talk_04",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_talk",
+    "text": "別に、迷子じゃないよ。ちょっと湖が見たかっただけ。",
+    "face": "neutral"
+  },
+  {
+    "id": "rin_talk_05",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_talk",
+    "text": "……お姉ちゃん、来月からお城の街の学校に行くんだって。聞いた？",
+    "face": "sad"
+  },
+  {
+    "id": "rin_talk_06",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_talk",
+    "text": "わたしも、お母さんから聞いたの。お姉ちゃんからじゃなくて。",
+    "face": "angry"
+  },
+  {
+    "id": "rin_talk_07",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_talk",
+    "text": "お姉ちゃんって、大事なことほど言わないんだよね。",
+    "face": "angry"
+  },
+  {
+    "id": "rin_talk_08",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_talk",
+    "text": "わたし、笑って「おめでとう」って言えなくて。それで、ここに来ちゃった。",
+    "face": "sad"
+  },
+  {
+    "id": "rin_talk_09",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_talk",
+    "text": "……言っていいのかな。お姉ちゃん、困らない？",
+    "face": "sad"
+  },
+  {
+    "id": "rin_talk_10",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_talk",
+    "text": "……そっか。困らせても、いいのかもね。",
+    "face": "relaxed"
+  },
+  {
+    "id": "rin_together_01",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_together",
+    "text": "一緒に、か。……ひとりで言うより、ずっと言いやすいかも。",
+    "face": "relaxed"
+  },
+  {
+    "id": "rin_end_01",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "rin_end",
+    "text": "戻ろっか。お姉ちゃん、きっと広場でうろうろしてるよ。",
+    "face": "happy"
+  },
+  {
+    "id": "ending_01",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "ending",
+    "text": "凛！ ……もう、心配したんだから。",
+    "face": "angry"
+  },
+  {
+    "id": "ending_02",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "ending",
+    "text": "……ごめん。ちょっと、湖。",
+    "face": "sad"
+  },
+  {
+    "id": "ending_03",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "ending",
+    "text": "お姉ちゃん。……お城の街に行っちゃうの、さみしい。",
+    "face": "sad"
+  },
+  {
+    "id": "ending_04",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "ending",
+    "text": "……うん。わたしも、さみしい。",
+    "face": "sad"
+  },
+  {
+    "id": "ending_05",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "ending",
+    "text": "言ったら、凛が笑ってくれなくなる気がして。言えなかったんだ。",
+    "face": "sad"
+  },
+  {
+    "id": "ending_together_01",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "ending_together",
+    "text": "お姉ちゃん。……お城の街の学校、おめでとう。",
+    "face": "relaxed"
+  },
+  {
+    "id": "ending_together_02",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "ending_together",
+    "text": "え……知ってたの？",
+    "face": "surprised"
+  },
+  {
+    "id": "ending_together_03",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "ending_together",
+    "text": "……ありがとう、凛。いちばん言ってほしかった。",
+    "face": "happy"
+  },
+  {
+    "id": "ending_common_01",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "ending_common",
+    "text": "探しに行ってくれて、ありがとう。着いたばっかりだったのにね。",
+    "face": "happy"
+  },
+  {
+    "id": "ending_ask_01",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "ending_ask",
+    "text": "心配かけてごめんね。ほんとは、わたしが先に話せばよかったんだ。",
+    "face": "relaxed"
+  },
+  {
+    "id": "ending_last_01",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "ending_last",
+    "text": "ねえ、お姉ちゃん。そろそろ鐘の時間じゃない？",
+    "face": "happy"
+  },
+  {
+    "id": "ending_last_02",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "ending_last",
+    "text": "ほんとだ！ 鐘が鳴ると、村じゅうの風船が上がるの。……ほら、見てて。",
+    "face": "happy"
+  },
+  {
+    "id": "ending_last_03",
+    "speaker": "rin",
+    "name": "凛",
+    "label": "ending_last",
+    "text": "きれい……。",
+    "face": "happy"
+  },
+  {
+    "id": "ending_last_04",
+    "speaker": "kaho",
+    "name": "夏帆",
+    "label": "ending_last",
+    "text": "来年も、三人で見ようね。お城の街からでも、帰ってくるから。",
+    "face": "happy"
+  }
+]

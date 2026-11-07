@@ -1,0 +1,109 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+body {
+  font-family: "Yu Gothic UI", "Yu Gothic", "Meiryo", "Hiragino Sans", sans-serif;
+  color: #5a3a4a;
+  user-select: none;
+}
+#stage { position: absolute; inset: 0; }
+#view { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.hidden { display: none !important; }
+
+#fade {
+  position: absolute; inset: 0; background: #000; opacity: 1;
+  pointer-events: none; transition: opacity 0.8s ease;
+}
+
+#banner {
+  position: absolute; left: 4%; top: 6%;
+  font-size: 2.1vw; letter-spacing: 0.25em; font-weight: 600;
+  padding: 0.4em 1.4em 0.4em 1em;
+  color: #c0607e;
+  background: rgba(255, 250, 252, 0.88);
+  border: 3px solid #f7b6cb; border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(240, 150, 180, 0.35);
+  transition: opacity 1s ease;
+}
+
+#prompt {
+  position: absolute; left: 50%; bottom: 8%; transform: translateX(-50%);
+  font-size: 1.4vw; padding: 0.35em 1.2em; border-radius: 999px;
+  color: #c0607e; font-weight: 600;
+  background: rgba(255, 250, 252, 0.9); border: 2px solid #f7b6cb;
+}
+
+#msg {
+  position: absolute; left: 5%; right: 5%; bottom: 3.5%; height: 29%;
+  background: rgba(255, 250, 252, 0.93);
+  border: 3px solid #f7b6cb;
+  border-radius: 22px;
+  box-shadow: 0 6px 20px rgba(240, 150, 180, 0.3);
+  padding: 2.3vw 2.8vw 1.6vw;
+}
+#name {
+  position: absolute; left: 2vw; top: -2.3vw;
+  background: #f29bbb; color: #fff; font-weight: 600;
+  font-size: 2.15vw; padding: 0.15em 1.2em; border-radius: 999px;
+  border: 3px solid #fff;
+}
+#text { font-size: 2.45vw; line-height: 1.6; white-space: pre-wrap; color: #5a3a4a; }
+#next {
+  position: absolute; right: 1.8vw; bottom: 1vw; font-size: 1.8vw; color: #f29bbb;
+  animation: bob 0.9s ease-in-out infinite;
+}
+@keyframes bob { 50% { transform: translateY(0.35vw); } }
+
+#choices {
+  position: absolute; left: 50%; bottom: 35%; transform: translateX(-50%);
+  display: flex; flex-direction: column; gap: 0.8vw; min-width: 44%;
+}
+#choices div {
+  font-size: 2.1vw; padding: 0.6em 1.4em; text-align: center; color: #5a3a4a;
+  background: rgba(255, 250, 252, 0.92); border: 3px solid #f7d0dc;
+  border-radius: 999px; cursor: pointer;
+}
+#choices div.sel { background: #f29bbb; color: #fff; border-color: #fff; }
+
+#title {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+#title h1 {
+  font-size: 6vw; font-weight: 700; letter-spacing: 0.3em; margin: 0 0 6vh 0.3em;
+  color: #fff;
+  text-shadow: 0 0 2px #e07aa0, 0 0 2px #e07aa0, 0 4px 0 #f29bbb, 0 8px 24px rgba(224, 122, 160, 0.6);
+}
+.menu { list-style: none; padding: 0; margin: 0; }
+.menu li {
+  font-size: 1.8vw; padding: 0.35em 2.4em; margin: 0.4em 0; text-align: center;
+  border-radius: 999px; cursor: pointer; border: 3px solid transparent;
+  background: rgba(255, 250, 252, 0.8); color: #c0607e; font-weight: 600;
+}
+.menu li.sel { background: #f29bbb; color: #fff; border-color: #fff; }
+.menu li.disabled { color: rgba(192, 96, 126, 0.35); }
+.menu.row { display: flex; justify-content: center; gap: 2vw; }
+.hint { margin-top: 3vh; font-size: 1.2vw; color: #fff; text-shadow: 0 0 4px #c0607e, 0 0 2px #c0607e; }
+.panel .hint { color: #b07890; text-shadow: none; }
+
+#pause, #slots, #confirm, #help {
+  position: absolute; inset: 0; background: rgba(255, 220, 232, 0.35);
+  display: flex; align-items: center; justify-content: center;
+}
+.panel {
+  background: rgba(255, 250, 252, 0.97); border: 3px solid #f7b6cb;
+  border-radius: 22px; padding: 2vw 3vw; min-width: 40%; text-align: center;
+  box-shadow: 0 8px 30px rgba(240, 150, 180, 0.35);
+}
+.panel .menu li { background: transparent; }
+.panel .menu li.sel { background: #f29bbb; }
+.panel.small { min-width: 30%; }
+.panel h2 { margin: 0 0 1.2vw; font-size: 2vw; font-weight: 700; letter-spacing: 0.2em; color: #e07aa0; }
+.panel p { font-size: 1.7vw; }
+#slots-menu li { text-align: left; font-size: 1.5vw; }
+#help table { margin: 0 auto; font-size: 1.5vw; border-collapse: collapse; }
+#help td { padding: 0.3em 1.2em; text-align: left; }
+#help td:first-child { color: #e07aa0; font-weight: 600; }
+
+#loading {
+  position: absolute; right: 3%; bottom: 3%; font-size: 1.3vw; color: #ddd;
+}
