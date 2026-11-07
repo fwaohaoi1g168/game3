@@ -64,7 +64,7 @@ Built with Claude: Japan 2026 の期間中（2026-11-02 12:30 のキックオフ
 
 ## 作ったもの、借りたもの
 
-- コード、台本、景色、音：Claude Code（Claude Opus 5.5）が 2026-11-06 に書いた
+- コード、台本、景色、音：作者（みお）の頼みと指示で、Claude Code（Claude Opus 5.5）が 2026-11-06 に書いた。台本の中身には作者が手を入れた
 - 人物の 3D モデル：VRoid Studio（pixiv）のサンプル AvatarSample_D、AvatarSample_E（VRM 1.0。再配布可、クレジット不要）。2026-11-06 に VRoid Studio から書き出して、そのまま使った（形は変えていない）
 - 声：2026-11-06 に Gemini TTS（Google）で作った。作る手順は Claude Code が書いた。声は既製の Laomedeia（夏帆）と Sulafat（凛）。`public/voice/` に台詞ごとの ogg がある。音声には SynthID の透かしが入る
 - BGM：2026-11-06 に作者（みお）が Gemini（Google）で作った。全部インスト（歌なし）
