@@ -2,6 +2,25 @@
 
 一人称で歩いて人と話す、短い 3D のアドベンチャー。朝の、おとぎ話のような村が舞台。three.js と @pixiv/three-vrm で作り、Electron で Windows 用にまとめた。
 
+
+## 外付けの目との関係
+
+このゲームは、全盲の守井清吾が作った、ゲームを自分の手で遊ぶための道具「外付けの目」（https://github.com/shingo-morii/sotozuke-no-me ）を確かめるために、チームのもう1人（守井の妻、みお）が作った。Built with Claude: Japan 2026 の作品の一部。
+
+- 2026年11月2日 12:30 のキックオフのあとに作った（下の「作った時期」）
+- 3Dで歩く画面を確かめるため、市販のノベルゲーム（Steam 版『ToHeart』）の3Dで町を歩く場面をまねて作った。外付けの目のコードや設定は見ずに作った。
+- 外付けの目の側（何も知らない Claude Code のセッション）は、遊べる形だけを受け取って、画面と音だけで調べた。ゲームのファイルの中は開いていない
+
+## 遊ぶには（Windows）
+
+Release（https://github.com/fwaohaoi1g168/game3/releases/latest ）の `game3-win.zip` を落として展開し、`game3-win32-x64\game3.exe` を起動する。外付けの目の取り込みに使ったのと同じ、2026-11-06 に書き出した版。作りは three.js（Electron で Windows 用にまとめた）。
+
+## ライセンス
+
+- コード（`src/`、`electron/`、`tools/`、`index.html`、`package.json`、`vite.config.js`）：MIT ライセンス（`LICENSE`）
+- 絵、音楽、声、台本の文、画面の部品の画像（`public/voice/`、`public/bgm/` と、台本の文（台詞と地の文。`src/story.js` の中））：再利用できない。このゲームを遊ぶこと、紹介のために画面や音を見せることはよい
+- 人物の3Dモデル（`public/models/`）は VRoid Studio（pixiv）のサンプル。そのサンプルの条件に従う（再配布・改変・商用可）。ライブラリの three.js、@pixiv/three-vrm、Electron は MIT
+
 ## 遊び方（Windows）
 
 1. 書き出した zip（下の「開発」の `npm run pack` でできるフォルダをまとめたもの）を展開する
