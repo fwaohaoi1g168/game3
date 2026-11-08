@@ -14,75 +14,106 @@ body {
   pointer-events: none; transition: opacity 0.8s ease;
 }
 
+/* 画面の部品の画像（ui/ の中）は Codex で作った。素材の記録表の「3本目」 */
 #banner {
-  position: absolute; left: 4%; top: 6%;
-  font-size: 2.1vw; letter-spacing: 0.25em; font-weight: 600;
-  padding: 0.4em 1.4em 0.4em 1em;
+  position: absolute; left: 3%; top: 6%;
+  height: 4.4vw; line-height: 4.4vw; min-width: 26vw; text-align: center;
+  font-size: 2vw; letter-spacing: 0.25em; font-weight: 700;
+  padding: 0 5.6vw 0 5.8vw;
   color: #c0607e;
-  background: rgba(255, 250, 252, 0.88);
-  border: 3px solid #f7b6cb; border-radius: 999px;
-  box-shadow: 0 4px 14px rgba(240, 150, 180, 0.35);
+  border-style: solid; border-width: 0 5.1vw;
+  border-image: url("../ui/ribbon.png") 0 210 fill / 0 5.1vw stretch;
+  filter: drop-shadow(0 0.25vw 0.5vw rgba(200, 100, 140, 0.35));
   transition: opacity 1s ease;
 }
 
 #prompt {
   position: absolute; left: 50%; bottom: 8%; transform: translateX(-50%);
-  font-size: 1.4vw; padding: 0.35em 1.2em; border-radius: 999px;
-  color: #c0607e; font-weight: 600;
-  background: rgba(255, 250, 252, 0.9); border: 2px solid #f7b6cb;
+  height: 3.4vw; line-height: 3.4vw; white-space: nowrap;
+  font-size: 1.45vw; padding: 0 1.2vw;
+  color: #c0607e; font-weight: 700;
+  border-style: solid; border-width: 0 3.9vw;
+  border-image: url("../ui/ribbon.png") 0 210 fill / 0 3.9vw stretch;
+  filter: drop-shadow(0 0.2vw 0.4vw rgba(200, 100, 140, 0.35));
 }
 
 #msg {
-  position: absolute; left: 5%; right: 5%; bottom: 3.5%; height: 29%;
-  background: rgba(255, 250, 252, 0.93);
-  border: 3px solid #f7b6cb;
-  border-radius: 22px;
-  box-shadow: 0 6px 20px rgba(240, 150, 180, 0.3);
-  padding: 2.3vw 2.8vw 1.6vw;
+  position: absolute; left: 4%; right: 4%; bottom: 2.5%; height: 30%;
+  border-style: solid; border-width: 3.8vw;
+  border-image: url("../ui/frame.png") 140 fill / 3.8vw stretch;
+  filter: drop-shadow(0 0.4vw 1vw rgba(220, 120, 160, 0.35));
+  padding: 0 0.6vw;
 }
 #name {
-  position: absolute; left: 2vw; top: -2.3vw;
-  background: #f29bbb; color: #fff; font-weight: 600;
-  font-size: 2.15vw; padding: 0.15em 1.2em; border-radius: 999px;
-  border: 3px solid #fff;
+  position: absolute; left: -0.6vw; top: -6.6vw;
+  height: 3.6vw; line-height: 3.6vw; min-width: 13vw;
+  color: #fff; font-weight: 700; letter-spacing: 0.15em;
+  font-size: 2.1vw; padding: 0 1.4vw 0 0.6vw;
+  text-shadow: 0 0 0.3vw rgba(200, 70, 120, 0.6);
+  border-style: solid; border-width: 0 1.7vw 0 3.7vw;
+  border-image: url("../ui/name.png") 0 80 0 175 fill / 0 1.7vw 0 3.7vw stretch;
 }
 #text { font-size: 2.45vw; line-height: 1.6; white-space: pre-wrap; color: #5a3a4a; }
 #next {
-  position: absolute; right: 1.8vw; bottom: 1vw; font-size: 1.8vw; color: #f29bbb;
-  animation: bob 0.9s ease-in-out infinite;
+  position: absolute; right: -1.4vw; bottom: -1.4vw; width: 2.6vw;
+  animation: bob 1.2s ease-in-out infinite;
 }
-@keyframes bob { 50% { transform: translateY(0.35vw); } }
+#next img { width: 100%; display: block; }
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(0.35vw) rotate(36deg); }
+}
 
 #choices {
-  position: absolute; left: 50%; bottom: 35%; transform: translateX(-50%);
+  position: absolute; left: 50%; bottom: 38%; transform: translateX(-50%);
   display: flex; flex-direction: column; gap: 0.8vw; min-width: 44%;
 }
 #choices div {
-  font-size: 2.1vw; padding: 0.6em 1.4em; text-align: center; color: #5a3a4a;
-  background: rgba(255, 250, 252, 0.92); border: 3px solid #f7d0dc;
-  border-radius: 999px; cursor: pointer;
+  font-size: 2.1vw; height: 4.6vw; line-height: 4.6vw; padding: 0 1vw;
+  text-align: center; color: #5a3a4a; cursor: pointer; white-space: nowrap;
+  border-style: solid; border-width: 0 2.5vw;
+  border-image: url("../ui/button.png") 0 110 fill / 0 2.5vw stretch;
+  filter: drop-shadow(0 0.25vw 0.5vw rgba(200, 100, 140, 0.3));
 }
-#choices div.sel { background: #f29bbb; color: #fff; border-color: #fff; }
+#choices div.sel {
+  color: #fff; font-weight: 700; text-shadow: 0 0 0.3vw rgba(200, 70, 120, 0.7);
+  border-image-source: url("../ui/button_sel.png");
+}
 
 #title {
   position: absolute; inset: 0; display: flex; flex-direction: column;
   align-items: center; justify-content: center;
 }
-#title h1 {
-  font-size: 6vw; font-weight: 700; letter-spacing: 0.3em; margin: 0 0 6vh 0.3em;
-  color: #fff;
-  text-shadow: 0 0 2px #e07aa0, 0 0 2px #e07aa0, 0 4px 0 #f29bbb, 0 8px 24px rgba(224, 122, 160, 0.6);
+#title h1 { margin: 0 0 4vh; line-height: 0; }
+#title h1 img {
+  width: 62vw; display: block;
+  filter: drop-shadow(0 0.5vw 1.2vw rgba(200, 90, 140, 0.45));
+  animation: logo-in 1.2s ease-out both;
+}
+@keyframes logo-in {
+  from { opacity: 0; transform: translateY(-1.5vw) scale(0.96); }
+  to { opacity: 1; transform: none; }
 }
 .menu { list-style: none; padding: 0; margin: 0; }
 .menu li {
-  font-size: 1.8vw; padding: 0.35em 2.4em; margin: 0.4em 0; text-align: center;
-  border-radius: 999px; cursor: pointer; border: 3px solid transparent;
-  background: rgba(255, 250, 252, 0.8); color: #c0607e; font-weight: 600;
+  font-size: 1.8vw; height: 3.9vw; line-height: 3.9vw; min-width: 21vw;
+  padding: 0 0.6vw; margin: 0.5vw 0; text-align: center; white-space: nowrap;
+  cursor: pointer; color: #c0607e; font-weight: 700; letter-spacing: 0.1em;
+  border-style: solid; border-width: 0 2.1vw;
+  border-image: url("../ui/button.png") 0 110 fill / 0 2.1vw stretch;
+  filter: drop-shadow(0 0.2vw 0.4vw rgba(200, 100, 140, 0.3));
 }
-.menu li.sel { background: #f29bbb; color: #fff; border-color: #fff; }
+.menu li.sel {
+  color: #fff; text-shadow: 0 0 0.3vw rgba(200, 70, 120, 0.7);
+  border-image-source: url("../ui/button_sel.png");
+}
 .menu li.disabled { color: rgba(192, 96, 126, 0.35); }
 .menu.row { display: flex; justify-content: center; gap: 2vw; }
-.hint { margin-top: 3vh; font-size: 1.2vw; color: #fff; text-shadow: 0 0 4px #c0607e, 0 0 2px #c0607e; }
+.menu.row li { min-width: 10vw; }
+.hint {
+  margin-top: 3vh; font-size: 1.2vw; color: #c0607e; font-weight: 600;
+  padding: 0.3em 1.2em; border-radius: 999px; background: rgba(255, 250, 245, 0.85);
+}
 .panel .hint { color: #b07890; text-shadow: none; }
 
 #pause, #slots, #confirm, #help {
@@ -90,12 +121,12 @@ body {
   display: flex; align-items: center; justify-content: center;
 }
 .panel {
-  background: rgba(255, 250, 252, 0.97); border: 3px solid #f7b6cb;
-  border-radius: 22px; padding: 2vw 3vw; min-width: 40%; text-align: center;
-  box-shadow: 0 8px 30px rgba(240, 150, 180, 0.35);
+  border-style: solid; border-width: 3.6vw;
+  border-image: url("../ui/frame.png") 140 fill / 3.6vw stretch;
+  padding: 0 1vw; min-width: 40%; text-align: center;
+  filter: drop-shadow(0 0.5vw 1.2vw rgba(220, 120, 160, 0.4));
 }
-.panel .menu li { background: transparent; }
-.panel .menu li.sel { background: #f29bbb; }
+.panel .menu { display: inline-block; }
 .panel.small { min-width: 30%; }
 .panel h2 { margin: 0 0 1.2vw; font-size: 2vw; font-weight: 700; letter-spacing: 0.2em; color: #e07aa0; }
 .panel p { font-size: 1.7vw; }

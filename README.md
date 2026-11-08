@@ -13,12 +13,12 @@
 
 ## 遊ぶには（Windows）
 
-Release（https://github.com/fwaohaoi1g168/game3/releases/latest ）の `game3-win.zip` を落として展開し、`game3-win32-x64\game3.exe` を起動する。外付けの目の取り込みに使ったのと同じ、2026-11-06 に書き出した版。作りは three.js（Electron で Windows 用にまとめた）。
+Release（https://github.com/fwaohaoi1g168/game3/releases/latest ）の `game3-1.1-win.zip` を落として展開し、`game3-win32-x64\game3.exe` を起動する。2026-11-08 に、題名のロゴと画面の部品（メッセージウインドウ、ボタン、札）を絵にした版。外付けの目の取り込みに使った 2026-11-06 の版は、Release `v1.0` の `game3-win.zip`。作りは three.js（Electron で Windows 用にまとめた）。
 
 ## ライセンス
 
 - コード（`src/`、`electron/`、`tools/`、`index.html`、`package.json`、`vite.config.js`）：MIT ライセンス（`LICENSE`）
-- 絵、音楽、声、台本の文、画面の部品の画像（`public/voice/`、`public/bgm/` と、台本の文（台詞と地の文。`src/story.js` の中））：再利用できない。このゲームを遊ぶこと、紹介のために画面や音を見せることはよい
+- 絵、音楽、声、台本の文、画面の部品の画像（`public/voice/`、`public/bgm/`、`public/ui/` と、台本の文（台詞と地の文。`src/story.js` の中））：再利用できない。このゲームを遊ぶこと、紹介のために画面や音を見せることはよい
 - 人物の3Dモデル（`public/models/`）は VRoid Studio（pixiv）のサンプル。そのサンプルの条件に従う（再配布・改変・商用可）。ライブラリの three.js、@pixiv/three-vrm、Electron は MIT
 
 ## 遊び方（Windows）
@@ -87,6 +87,7 @@ Built with Claude: Japan 2026 の期間中（2026-11-02 12:30 のキックオフ
 - 人物の 3D モデル：VRoid Studio（pixiv）のサンプル AvatarSample_D、AvatarSample_E（VRM 1.0。再配布可、クレジット不要）。2026-11-06 に VRoid Studio から書き出して、そのまま使った（形は変えていない）
 - 声：2026-11-06 に Gemini TTS（Google）で作った。作る手順は Claude Code が書いた。声は既製の Laomedeia（夏帆）と Sulafat（凛）。`public/voice/` に台詞ごとの ogg がある。音声には SynthID の透かしが入る
 - BGM：2026-11-06 に作者（みお）が Gemini（Google）で作った。全部インスト（歌なし）
+- 題名のロゴと画面の部品の画像（`public/ui/`。メッセージウインドウの枠、ボタン、名前の札、場所の札、送りの印）：2026-11-08 に、作者の頼みで Claude Code が OpenAI の画像生成（Codex に入っているもの）に頼んで作った。緑の背景を透明にするのは Claude Code が書いたプログラム
 - ライブラリ：three.js（MIT）、@pixiv/three-vrm（MIT）、Electron（MIT）
 - フォントは同梱していない（Windows の游ゴシック・メイリオを使う）
 
@@ -94,6 +95,7 @@ Built with Claude: Japan 2026 の期間中（2026-11-02 12:30 のキックオフ
 
 - 声：Gemini TTS（Google）。Google Cloud の Vertex AI（使った分を払う有料）で作った
 - BGM：Gemini アプリ（Google。音楽は Lyria）。作者の Google AI Pro（有料）で作った
+- ロゴと画面の部品の画像：OpenAI の画像生成（Codex に入っているもの）。作者の ChatGPT Plus（有料）のアカウントで使った
 - 3Dの人物は生成 AI ではなく、VRoid Studio のサンプル
 
 どの道具の規約も、作った物は使う人のもので、公開を禁じていない（2026-11-07 に OpenAI の利用規約、Google 利用規約、Google Cloud のサービス固有の規約、Gemini API 追加利用規約の本文で確かめた）。AI で作った物を人が作った物とは見せない（どの規約にもある決まり）。
