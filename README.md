@@ -13,7 +13,7 @@
 
 ## 遊ぶには（Windows）
 
-Release（https://github.com/fwaohaoi1g168/game3/releases/latest ）の `game3-1.1-win.zip` を落として展開し、`game3-win32-x64\game3.exe` を起動する。2026-11-08 に、題名のロゴと画面の部品（メッセージウインドウ、ボタン、札）を絵にした版。外付けの目の取り込みに使った 2026-11-06 の版は、Release `v1.0` の `game3-win.zip`。作りは three.js（Electron で Windows 用にまとめた）。
+Release（https://github.com/fwaohaoi1g168/game3/releases/tag/v1.1 ）の `game3-1.1-win.zip` を落として展開し、`game3-win32-x64\game3.exe` を起動する。2026-11-08 に、題名のロゴと画面の部品（メッセージウインドウ、ボタン、札）を絵にした版。外付けの目の取り込みに使った 2026-11-06 の版は、Release `v1.0` の `game3-win.zip`。作りは three.js（Electron で Windows 用にまとめた）。
 
 ## ライセンス
 
